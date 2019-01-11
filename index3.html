@@ -6,9 +6,58 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
     <script src="./js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="./js/scripts.js" type="text/javascript"></script>
-    <title></title>
+    <title>Fortune Teller Survey</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Fortune Teller Survey</h2>
+      </div>
+      <form id="fortune_teller_survey">
+        <div class="form-group">
+          <p>In the past year, I have experienced the following warning signs of high stress in my life:</p>
+          <input type="checkbox" name="stress-warning" value="sleep-loss">Loss of sleep.<br>
+          <input type="checkbox" name="stress-warning" value="overwhelmed">Feeling overwhelmed.<br>
+          <!-- <input type="checkbox" name="stress-warning" value="carpool">.<br>
+          <input type="checkbox" name="stress-warning" value="walk">Walking.<br>
+          <input type="checkbox" name="stress-warning" value="bus">Riding the bus.<br>
+          <input type="checkbox" name="stress-warning" value="train">Riding the train.<br> -->
+        </div>
+        <div class="form-group">
+          <p>In the past year, I have used the following modes of coping to counter stress:</p>
+          <input type="checkbox" name="stress-coping" value="meditation">Meditation.<br>
+          <input type="checkbox" name="stress-coping" value="time-management">Managing my time.<br>
+          <input type="checkbox" name="stress-coping" value="pet-time">Spending time with a favorite pet.<br>
+          <input type="checkbox" name="stress-coping" value="walking">Going for a walk.<br>
+          <input type="checkbox" name="stress-coping" value="books">Reading a book.<br>
+          <input type="checkbox" name="stress-coping" value="talking">Communicating with friends or family.<br>
+          <!-- <input type="checkbox" name="stress-coping" value="streetcar">Riding the streetcar.<br>
+          <input type="checkbox" name="stress-coping" value="taxi">Taking a taxi.<br>
+          <input type="checkbox" name="stress-coping" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
+          <input type="checkbox" name="stress-coping" value="skateboard">Skateboarding.<br>
+          <input type="checkbox" name="stress-coping" value="rollerblade">Rollerblading.<br>
+          <input type="checkbox" name="stress-coping" value="scooter">Riding a scooter.<br>
+          <input type="checkbox" name="stress-coping" value="other">Another mode of transportation not listed here.<br> -->
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="stress-responses">
+        <p><b>You have felt the following stress indicators, be they symptoms or warning signs, in the last year:</b></p>
+      </span>
+      <br>
+      <span id="coping-responses">
+        <p><b>You have used the following methods of coping to counter stress in the past year:</b></p>
+      </span>
+      <br>
+      <span id="positive-response">
+        <p><b>Based on your inputs, you appear to be doing well at managing your stress.  However, should things turn for the worse, don't hesitate to find other methods to cope or look for other resources to help.</b></p>
+      </span>
+      <span id="neutral-response">
+        <p><b>Based on your inputs, you could be doing better at managing your stress, but your ability to manage stress isn't terrible, either.  Don't hesitate to reach out for help, find other methods of coping, or look up various resources online for help.</b></p>
+      </span>
+      <span id="warning-response">
+        <p><b>Based on your inputs, you don't seem to be doing that well with managing your stress when it comes to how many signs and symptoms you face versus your coping methods.  Below are some resources that we feel can help you out.</b></p>
+      </span>
+    </div>
   </body>
 </html>
