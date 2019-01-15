@@ -1,0 +1,23 @@
+#lucky-finds {
+  display: none;
+}
+
+#unlucky-finds {
+  display: none;
+}
+
+#extra-lucky-response {
+  display: none;
+}
+
+#lucky-response {
+  display: none;
+}
+
+#neutral-response {
+  display: none;
+}
+
+#unlucky-response {
+  display: none;
+}
