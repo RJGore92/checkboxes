@@ -17,7 +17,7 @@ var luckyLevel = 0;
 
 $(document).ready(function(){
   $("form#fortune_teller_survey").submit(function(event){
-    // luckyLevel = 0;
+    luckyLevel = 0;
     event.preventDefault();
     $("#unlucky-finds").show();
     $("input:checkbox[name=bad-luck]:checked").each(function(){
